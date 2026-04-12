@@ -365,6 +365,7 @@ public final class Main {
                 Matcher matcher = pattern.matcher(scanner.nextLine());
                 if (matcher.matches()) {
                     String installedVersionCode = matcher.group(1);
+                    scanner.close();
                     return !REQUIRED_APK_VERSION_CODE.equals(installedVersionCode);
                 }
             }
