@@ -77,9 +77,22 @@ The release archive keeps the same simple layout:
 
 For this fork, the intended public release line starts at `v3.0.0`.
 
+Important upgrade note:
+
+- this fork is signed with a different key than the original upstream project
+- if you already installed the old upstream APK, uninstall it once before
+  installing this fork's APK, otherwise `adb install -r gnirehtet.apk` will
+  fail with an update-signature mismatch
+
 ## Quick Start For Quest 3
 
 On macOS and Linux:
+
+If you are replacing the old upstream APK, run this once first:
+
+```bash
+adb uninstall com.genymobile.gnirehtet
+```
 
 ```bash
 adb install -r gnirehtet.apk
@@ -88,8 +101,9 @@ adb install -r gnirehtet.apk
 
 On Windows:
 
-1. Install `gnirehtet.apk` once with `adb install -r gnirehtet.apk`.
-2. Double-click `gnirehtet-run.cmd`, or run `gnirehtet run` in a terminal.
+1. If the old upstream APK is already installed, run `adb uninstall com.genymobile.gnirehtet` once.
+2. Install `gnirehtet.apk` with `adb install -r gnirehtet.apk`.
+3. Double-click `gnirehtet-run.cmd`, or run `gnirehtet run` in a terminal.
 
 What to expect:
 
@@ -167,6 +181,14 @@ Start the relay:
 ```
 
 Install the APK:
+
+If you are replacing the old upstream APK, uninstall it once first:
+
+```bash
+adb uninstall com.genymobile.gnirehtet
+```
+
+Then install the fork release:
 
 ```bash
 adb install -r gnirehtet.apk

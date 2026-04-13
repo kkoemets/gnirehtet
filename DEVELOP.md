@@ -90,6 +90,10 @@ Without those properties, Gradle produces `gnirehtet-release-unsigned.apk`
 instead of `gnirehtet-release.apk`, and the packaging script will not complete
 as-is.
 
+If you publish this fork with your own signing key, Android treats it as a
+different signer than the original upstream APK. Existing upstream users must
+uninstall `com.genymobile.gnirehtet` once before installing the forked release.
+
 ## Architecture
 
 The Android client registers a [VPN], intercepts the headset's IPv4 traffic,
