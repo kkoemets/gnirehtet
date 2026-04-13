@@ -1,9 +1,11 @@
-# Gnirehtet For Quest 3 (v3.0.0)
+# Gnirehtet For Quest 3 Link Cable And Virtual Desktop (v3.0.0)
 
 This project packages **gnirehtet** as a practical reverse-tethering tool for
-**Meta Quest 3 over Link cable / USB**. The goal is simple: let the headset use
-the host computer's internet connection through `adb`, with Quest 3-focused
-reconnect and startup fixes.
+**Meta Quest 3 over Link cable / USB**. It is especially useful for
+**Virtual Desktop on Quest 3** when you want a wired PCVR setup without
+depending on Wi-Fi. The goal is simple: let the headset use the host
+computer's internet connection through `adb`, with Quest 3-focused reconnect
+and startup fixes.
 
 This is still the same core model:
 
